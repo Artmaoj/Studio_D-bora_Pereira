@@ -3,169 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Studio Déborah Pereira</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Raleway', sans-serif;
-      background-color: #fbeeff;
-      color: #333;
-      line-height: 1.6;
-      padding-bottom: 50px;
-    }
-
-    header {
-      background-color: #ffe6ec;
-      padding: 2rem;
-      text-align: center;
-      font-size: 2.5rem;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      color: #cd67ec;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .dados {
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      background-color: rgb(245, 178, 242);
-      padding: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .dados li {
-      margin: 0 10px;
-    }
-
-    .dados a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      background-color: #ac3cce;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .dados a:hover {
-      background-color: rgb(236, 159, 255);
-    }
-
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    h1, h2 {
-      color: #ac3cce;
-      margin-top: 2rem;
-    }
-
-    p {
-      margin: 10px 0;
-    }
-
-    footer {
-      background-color: #f8d7dd;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    footer a {
-      color: #eb143b;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* grid cílios */
-    .grid-cilios {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .item-cilios img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #ac3cce;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 10px;
-    }
-
-    .item-cilios p {
-      color: #555;
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-
-    /* grid cabelos */
-    .grid-cabelo {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .item-cabelo img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 12px;
-      border: 3px solid #ffd7ef;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-      margin-bottom: 10px;
-    }
-
-    .item-cabelo p {
-      color: #555;
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-  </style>
-</head>
-
-<body>
 
   <header>
     Studio Déborah Pereira
   </header>
 
-  <ul class="dados">
-    <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#valores">Valores</a></li>
-    <li><a href="#depoimentos">Depoimentos</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
+  <!-- MENU FIXO -->
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#valores">Valores</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato">Agendar</a>
+  </nav>
 
   <main>
-
+    <h1 id="sobre">Sobre</h1>
     <p>O Studio Déborah Pereira une saúde e beleza em cada atendimento. Mais do que estética, cada procedimento é pensado para valorizar a autoestima, respeitando a saúde da pele, dos fios e do corpo. Com técnicas modernas e seguras, o Studio transforma cuidados de beleza em bem-estar, trazendo confiança e equilíbrio para cada cliente.</p>
 
     <h1 id="servicos">Serviços</h1>
-    <p>| Cabelo | Extensão de cílios | Design de Sobrancelha | Henna Labial | Brow |</p>
+    <p style="text-align:center;">| Cabelo | Extensão de cílios | Design de Sobrancelha | Henna Labial | Brow |</p>
 
     <h1 id="valores">Tabela de valores</h1>
 
-    <h2>Design de Sobrancelha</h2>
+    <h2>Design de Cílios e Sobrancelha</h2>
     <div class="grid-cilios">
+      <!-- ITENS DE CÍLIOS -->
       <div class="item-cilios">
         <img src="https://gmcilios.com.br/wp-content/uploads/2023/05/MEGA-VOLUME-BRASILEIRO-rotated.jpeg" alt="Volume Brasileiro">
         <p>Volume Brasileiro<br>R$ 95,00 (Manutenção R$ 75,00)</p>
@@ -196,10 +62,27 @@
         <p>Volume Luxo<br>R$ 170,00 (Manutenção R$ 120,00)</p>
       </div>
 
+      <div class="item-cilios">
+        <img src=".vscode/brownatural.jpeg" alt="Natural">
+        <p>Sobrancelha Natural<br>R$ 25,00 </p>
+      </div>
+
+      <div class="item-cilios">
+        <img src=".vscode/browcomhenna.jpeg" alt="com Henna">
+        <p>Sobrancelha com Henna<br>R$ 30,00</p>
+      </div>
+
+      <div class="item-cilios">
+        <img src=".vscode/depilaçaobuço.jpeg" alt="depilação de buço">
+        <p>Depilação de Buço<br>R$ 15,00 </p>
+      </div>
+    </div> <!-- FECHANDO A GRID CÍLIOS -->
+
     <h2>Cabelos</h2>
     <div class="grid-cabelo">
+      <!-- ITENS CABELO -->
       <div class="item-cabelo">
-        <img src="" alt="Escova">
+        <img src=".vscode/escovado.jpeg" alt="Escova">
         <p>Escova<br>R$ 25,00</p>
       </div>
 
@@ -214,7 +97,7 @@
       </div>
 
       <div class="item-cabelo">
-        <img src=".vscode/hidratacao.jpeg" alt="Hidratação">
+        <img src=".vscode/hidratado.jpeg" alt="Hidratação">
         <p>Hidratação<br>R$ 30,00</p>
       </div>
 
@@ -230,14 +113,20 @@
     <p>“Ambiente limpo, organizado e acolhedor. Saí renovada.” — Adrielly</p>
 
     <h2 id="contato">Agende já!</h2>
-    <p>📱 WhatsApp: <strong><a href="https://wa.me/5538997409582" target="_blank">Fale conosco no WhatsApp</a></strong></p>
+    <p style="text-align:center;">📱 WhatsApp: <strong><a href="https://wa.me/5538997409582" target="_blank">Agende seu horário!</a></strong></p>
 
   </main>
 
   <footer>
     <h2>Veja mais do nosso trabalho!</h2>
-    <a href="https://www.instagram.com/studio_deborahpereira/" target="_blank">Instagram</a>
+    <a href="https://www.instagram.com/studio_deborahpereira/" target="_blank">
+      <img src=".vscode/INSTAGRAM.webp" alt="instagram" width="40px" height="40px">
+    </a>
+    <ul class="dados">
+      <li><a href="file:///C:/Users/user/Desktop/St%C3%BAdio%20Deborah%20Pereira/sugest%C3%A3o.html">Alguma sugestão? Fale conosco!</a></li>
+    </ul>
   </footer>
 
 </body>
 </html>
+
