@@ -11,7 +11,9 @@
       line-height: 1.6;
       padding-bottom: 50px;
     }
-
+    main{
+     margin-top: 20px;
+     {
     header {
       background-color: #ffe6ec;
       padding: 4rem;
@@ -211,3 +213,4 @@
     .button:hover {
       background-color: #a23bbb;
     }
+
