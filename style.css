@@ -20,7 +20,9 @@
       color: #cd67ec;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-
+    .sobre{
+     margin-top: 20px;
+    }
     /* MENU FIXO */
     nav {
       position: fixed;
@@ -210,5 +212,6 @@
     .button:hover {
       background-color: #a23bbb;
     }
+
 
 
