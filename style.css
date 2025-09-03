@@ -51,9 +51,9 @@
 
     main {
     max-width: 900px;
-    margin: 150px auto 0 auto; /* compensa header + nav fixo */
+    margin: 20px auto 0 auto; /* só um espaçamento mínimo para o main */
     padding: 20px;
-}
+    }
 
     h1, h2 {
       color: #823699;
@@ -211,6 +211,7 @@
     .button:hover {
       background-color: #a23bbb;
     }
+
 
 
 
