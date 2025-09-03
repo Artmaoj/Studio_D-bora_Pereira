@@ -1,3 +1,4 @@
+
   * {
       margin: 0;
       padding: 0;
@@ -12,30 +13,29 @@
       padding-bottom: 50px;
     }
     header {
-      background-color: #ffe6ec;
-      padding: 4rem;
-      text-align: center;
-      font-size: 2.5rem;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      color: #cd67ec;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #ffe6ec;
+    padding: 1rem;           /* header compacto */
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #cd67ec;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;       /* header normal */
+    z-index: 500;
     }
-    .sobre{
-     margin-top: 20px;
-    }
-    /* MENU FIXO */
+
     nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #cd67ec;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      z-index: 1000;
+    position: fixed;
+    top: 140px;                /* nav começa logo abaixo do header */
+    left: 0;
+    width: 100%;
+    background-color: #cd67ec;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
     }
 
     nav a {
@@ -50,11 +50,10 @@
     }
 
     main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      margin-top: 160px; /* para não ficar escondido atrás do header + menu */
-    }
+    max-width: 900px;
+    margin: 150px auto 0 auto; /* compensa header + nav fixo */
+    padding: 20px;
+}
 
     h1, h2 {
       color: #823699;
