@@ -1,135 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Studio Déborah Pereira</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Studio Déborah Pereira — Estética Feminina</title>
+  <meta name="description" content="Studio Déborah Pereira — Beleza, cosméticos e cuidados pessoais em Montes Claros, MG. Cabelo, extensão de cílios, design de sobrancelha, henna labial e muito mais.">
+  <style>
+    :root{--accent:#b77df0;--dark:#222;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;color:var(--dark);background:#ffe4ec}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#f6c1ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff}
+    nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-top:18px}
+    .hero h1{font-size:28px;margin:0 0 10px}
+    .tag{color:var(--accent);font-weight:700}
+    .lead{color:var(--muted);line-height:1.5}
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .btn{padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:2px solid rgba(0,0,0,0.06);color:var(--dark)}
+    .card{background:white;border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .service{padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbf9ff);text-align:center}
+    .service h3{margin:8px 0 4px}
+    .grid-full{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .about p{color:var(--muted)}
+    .contact .phone{font-weight:700}
+    footer{margin-top:28px;padding:18px 0;color:var(--muted);text-align:center}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .services{grid-template-columns:repeat(2,1fr)}
+      .grid-full{grid-template-columns:1fr}
+      nav{display:none}
+    }
+    @media (max-width:520px){
+      .services{grid-template-columns:1fr}
+      .logo{width:52px;height:52px}
+      .hero h1{font-size:22px}
+    }
+    /* small gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery img{width:100%;height:90px;object-fit:cover;border-radius:8px}
+  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">DP</div>
+        <div>
+          <div style="font-weight:800">Studio Déborah Pereira</div>
+          <div style="font-size:13px;color:var(--muted)">Beleza, cosméticos e cuidados pessoais — Montes Claros, MG</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#about">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
 
-  <header>
-    <h2></h2>Studio Déborah Pereira</h2>
-  </header>
+    <section class="hero">
+      <div>
+        <h1>✨Você é o seu melhor <span class="tag">Investimento</span>✨</h1>
+        <p class="lead">Ministrante de curso — resultados profissionais em: cabelo, extensão de cílios, design de sobrancelha, henna labial e brow. Atendimento personalizado com atenção ao detalhe e produtos de qualidade.</p>
 
-  <!-- MENU FIXO -->
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#valores">Valores</a>
-    <a href="#depoimentos">Depoimentos</a>
-    <a href="#contato">Agendar</a>
-  </nav>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://api.whatsapp.com/send/?phone=5538997409582&text=Ol%C3%A1%2C+quero+agendar+um+hor%C3%A1rio+&type=phone_number&app_absent=0" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+          <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+        </div>
 
-  <main>
-    <h1 id="sobre">Sobre</h1>
-    <p>O Studio Déborah Pereira une saúde e beleza em cada atendimento. Mais do que estética, cada procedimento é pensado para valorizar a autoestima, respeitando a saúde da pele, dos fios e do corpo. Com técnicas modernas e seguras, o Studio transforma cuidados de beleza em bem-estar, trazendo confiança e equilíbrio para cada cliente.</p>
-
-    <h1 id="servicos">Serviços</h1>
-    <p style="text-align:center;">| Cabelo | Extensão de cílios | Design de Sobrancelha | Henna Labial | Brow |</p>
-
-    <h1 id="valores">Tabela de valores</h1>
-
-    <h2>Design de Cílios e Sobrancelha</h2>
-    <div class="grid-cilios">
-      <!-- ITENS DE CÍLIOS -->
-      <div class="item-cilios">
-        <img src="https://gmcilios.com.br/wp-content/uploads/2023/05/MEGA-VOLUME-BRASILEIRO-rotated.jpeg" alt="Volume Brasileiro">
-        <p>Volume Brasileiro<br>R$ 95,00 (Manutenção R$ 75,00)</p>
+        <div id="servicos" class="card" style="margin-top:18px">
+          <h2 style="margin:0 0 6px">Serviços oferecidos</h2>
+          <div class="services">
+            <div class="service"><strong>Cabelo</strong><div style="font-size:13px;color:var(--muted)">Cortes, coloração e styling</div></div>
+            <div class="service"><strong>Extensão de cílios</strong><div style="font-size:13px;color:var(--muted)">Modelagem e volume personalizado</div></div>
+            <div class="service"><strong>Design de sobrancelha</strong><div style="font-size:13px;color:var(--muted)">Fio a fio e correção de formato</div></div>
+            <div class="service"><strong>Henna labial</strong><div style="font-size:13px;color:var(--muted)">Contorno e preenchimento natural</div></div>
+            <div class="service"><strong>Brow</strong><div style="font-size:13px;color:var(--muted)">Brow lamination e finalização</div></div>
+            <div class="service"><strong>Workshops</strong><div style="font-size:13px;color:var(--muted)">Cursos ministrados pela Déborah</div></div>
+          </div>
+        </div>
       </div>
 
-      <div class="item-cilios">
-        <img src="https://gmcilios.com.br/wp-content/uploads/2023/05/MEGA-VOLUME-BRASILEIRO-4-600x586.jpg" alt="Mega Brasileiro">
-        <p>Mega Brasileiro<br>R$ 125,00 (Manutenção R$ 90,00)</p>
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Local</h3>
+          <p class="lead">Montes Claros, MG</p>
+          <h3 style="margin-bottom:6px">Contato rápido</h3>
+          <p class="phone">WhatsApp: <a href="https://api.whatsapp.com/send/?phone=5538997409582&text=Ol%C3%A1%2C+quero+agendar+um+hor%C3%A1rio+&type=phone_number&app_absent=0" target="_blank">(55) 38 99740-9582</a></p>
+          <div style="margin-top:12px">
+            <a class="btn btn-primary" href="https://api.whatsapp.com/send/?phone=5538997409582&text=Ol%C3%A1%2C+quero+agendar+um+hor%C3%A1rio+&type=phone_number&app_absent=0" target="_blank">Enviar mensagem</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3 style="margin-top:6px">Galeria</h3>
+          <div class="gallery" style="margin-top:8px">
+            <img src="https://gmcilios.com.br/wp-content/uploads/2023/09/FOX-EYES-3.jpeg" alt="Fox Eyes">
+            <img src="https://gmcilios.com.br/wp-content/uploads/2024/03/HARMONIZACAO-DO-OLHAR-1.jpg" alt="Harmonização do Olhar">
+            <img src="https://i.pinimg.com/1200x/8b/13/04/8b13045dd60a80951c7d0d90909f3f49.jpg" alt="Estética feminina">
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid-full" id="about">
+      <div class="about card">
+        <h2>Sobre a Déborah</h2>
+        <p>Profissional apaixonada por estética e ensino. Com experiência em atendimento feminino e formação para profissionais, Déborah oferece serviços personalizados que valorizam a beleza natural de cada cliente.</p>
+        <p style="margin-top:8px;color:var(--muted)"><strong>Ministrante de Curso</strong> — aulas práticas e teóricas para quem deseja atuar na área de estética.</p>
       </div>
 
-      <div class="item-cilios">
-        <img src="https://gmcilios.com.br/wp-content/uploads/2023/05/VOLUME-EGIPCIO-2-600x580.jpg" alt="Volume Egípcio 3D">
-        <p>Volume Egípcio 3D<br>R$ 135,00 (Manutenção R$ 95,00)</p>
+      <div class="contact card" id="contato">
+        <h2>Agendamento & Contato</h2>
+        <p>Para agendar um horário clique no botão abaixo e envie uma mensagem pelo WhatsApp. Atendimento por horário marcado.</p>
+        <a class="btn btn-primary" href="https://api.whatsapp.com/send/?phone=5538997409582&text=Ol%C3%A1%2C+quero+agendar+um+hor%C3%A1rio+&type=phone_number&app_absent=0" target="_blank">Agendar pelo WhatsApp</a>
+
+        <h3 style="margin-top:14px">Endereço</h3>
+        <p class="lead">Montes Claros, Minas Gerais</p>
+
       </div>
+    </section>
 
-      <div class="item-cilios">
-        <img src="https://gmcilios.com.br/wp-content/uploads/2023/05/VOLUME-INGLES-2-300x300.jpg" alt="Glamour 4D">
-        <p>Glamour 4D<br>R$ 150,00 (Manutenção R$ 100,00)</p>
-      </div>
+    <footer>
+      Studio Déborah Pereira © 2025 - Todos os direitos reservados<br>
+      Site desenvolvido por Arthur Barbosa <span id="year"></span>
+    </footer>
+  </div>
 
-      <div class="item-cilios">
-        <img src="https://gmcilios.com.br/wp-content/uploads/2023/09/FOX-EYES-3-300x300.jpeg" alt="Efeito Fox">
-        <p>Efeito Fox<br>R$ 160,00 (Manutenção R$ 120,00)</p>
-      </div>
-
-      <div class="item-cilios">
-        <img src="https://gmcilios.com.br/wp-content/uploads/2024/09/IMG_9710-300x300.jpg" alt="Volume Luxo">
-        <p>Volume Luxo<br>R$ 170,00 (Manutenção R$ 120,00)</p>
-      </div>
-
-      <div class="item-cilios">
-        <img src="https://gmcilios.com.br/wp-content/uploads/2023/05/CLASSICO-FIO-A-FIO-4-300x300.jpg" alt="Natural">
-        <p>Sobrancelha Natural<br>R$ 25,00 </p>
-      </div>
-
-      <div class="item-cilios">
-        <img src="https://gmcilios.com.br/wp-content/uploads/2024/03/VOLUME-BRASILEIRO-MARROM-2-300x300.jpg" alt="com Henna">
-        <p>Sobrancelha com Henna<br>R$ 30,00</p>
-      </div>
-
-      <div class="item-cilios">
-        <img src="https://imgs.search.brave.com/0UBJRmZZZgOO4kM4JTT8ixP3lcQyTfDJHfpT4zYEHNM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzVkLzk4/Lzg5LzVkOTg4OWU1/ZjViOWY0YzFiNGRl/ZTFjMGNlMDdlMmZi/LmpwZw" alt="depilação de buço">
-        <p>Depilação de Buço<br>R$ 15,00 </p>
-      </div>
-    </div> <!-- FECHANDO A GRID CÍLIOS -->
-
-    <h2>Cabelos</h2>
-    <div class="grid-cabelo">
-      <!-- ITENS CABELO -->
-      <div class="item-cabelo">
-        <img src="https://i.pinimg.com/1200x/97/e4/cd/97e4cd5fd3648389d1e89142058574c3.jpg" alt="Escova">
-        <p>Escova<br>R$ 25,00</p>
-      </div>
-
-      <div class="item-cabelo">
-        <img src="https://i.pinimg.com/736x/4a/75/3c/4a753c418cb2d9e022485a6deabbe1ae.jpg" alt="Tintura">
-        <p>Tintura<br>R$ 25,00</p>
-      </div>
-
-      <div class="item-cabelo">
-        <img src="https://i.pinimg.com/736x/f7/6a/8a/f76a8a53b919b4a30cc8baebadae489f.jpg" alt="Hidratação + Escova/ Escova">
-        <p>Hidratação + Escova / Só Escova <br>R$ 50,00 / R$ 20,00</p>
-      </div>
-
-      <div class="item-cabelo">
-        <img src="https://i.pinimg.com/736x/64/2b/c6/642bc665d3ad6a6fd750d3bd552b11a0.jpg" alt="Hidratação">
-        <p>Hidratação<br>R$ 30,00</p>
-      </div>
-
-      <div class="item-cabelo">
-        <img src="https://i.pinimg.com/736x/9c/35/4f/9c354f7d8b6a77f1919ebdca2506dba2.jpg" alt="Progressiva">
-        <p>Progressiva<br>R$ 100,00</p>
-      </div>
-    </div>
-
-    <h1 id="depoimentos">Depoimentos dos nossos clientes</h1>
-    <p>"Super recomendo, ela foi extremamente gentil" — Luciana</p>
-    <p>“Amei meus cílios! Ficaram leves e naturais. Atendimento impecável.” — Ana</p>
-    <p>“Ambiente limpo, organizado e acolhedor. Saí renovada.” — Adrielly</p>
-
-    <h2 id="contato">Agende já!</h2>
-    <p style="text-align:center;">📱 WhatsApp: <strong><a href="https://wa.me/5538997409582" target="_blank">Agende seu horário!</a></strong></p>
-
-  </main>
-
-  <footer>
-    <h2>Veja mais do nosso trabalho!</h2>
-    <a href="https://www.instagram.com/studio_deborahpereira/" target="_blank">
-      <img src="https://e7.pngegg.com/pngimages/653/46/png-clipart-instagram-icon-computer-icons-logo-symbol-instagram-instagram-text-number.png" alt="instagram" width="40px" height="40px">
-    </a>
-    <ul class="dados">
-      <li><a href="sugestão.html">Alguma sugestão? Fale conosco!</a></li>
-    </ul>
-  </footer>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
 
 
